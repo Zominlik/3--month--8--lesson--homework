@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .title{
+        text-align: center;
+    }
+    body{
+        padding: 3rem;
+        display: flex;
+        gap: 1rem;
+    }
+    .select__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 9rem;
+        gap: 0.3rem;
+    }
+    .circle__wrapper{
+        display: flex;
+        gap: 1rem;
+        width: 18rem;
+    }
+    .circle{
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .label__wrapper{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 0.3fr 2fr 0.3fr 2fr;
+        gap: 0.3rem;
+        margin-left: -0.5rem;
+    }
+    .main__wrapper{
+        width: 50%;
+        border-right: 1px solid black;
+        display: inline-block;
+    }
+    .btn__placing__an__order{
+        color: white;
+        background-color: red;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        border: none;
+    }
+    button{
+        cursor: pointer;
+    }
+    /* .orders__wrapper{
+        visibility: hidden;
+    } */
+    .orders__wrapper.visible{
+        visibility: visible;
+    }
+</style>
+<body>
+    <div class="main__wrapper">
+        <h1 class="title">Pitsa Buyurtma Qilish</h1>
+    <div class="select__wrapper">
+        <span for="choise__pitsa" class="select__span">Noni qanday bo'lsin ?</span>
+        <select name="" id="" class="select">
+            <option id="choise__pitsa" value="yupqa" class="option">yupqa</option>
+            <option id="choise__pitsa" value="o'rtacha" class="option1">O'rtacha</option>
+        </select>
+        <div class="size__wrapper">
+            <p class="paragraph">
+                kattaligi
+            </p>
+            <div class="circle__wrapper">
+                <button class="circle">25sm</button>
+                <button class="circle">30sm</button>
+                <button class="circle">35sm</button>
+            </div>
+        </div>
+    </div>
+    <div class="checkboc__wrapper">
+        <p class="check__paragraph">
+            Ustiga Nima Solaylik
+        </p>
+        <div class="label__wrapper">
+            <input id="Pomidor" class="checkbox" type="checkbox">
+            <label for="Pomidor" class="label">Pomidor</label>
+            <input id="KurkaGo'shti" class="checkbox" type="checkbox">
+            <label for="KurkaGo'shti" class="label">Kurka Go'shti</label>
+            <input id="Zaytun" class="checkbox" type="checkbox">
+            <label for="Zaytun" class="label">Zaytun</label>
+            <input type="checkbox" class="input">
+            <label for="Tuzlanganbodring" class="label">Tuzlangan bodring</label>
+            <input id="Qo'ziqorin" class="checkbox" type="checkbox">
+            <label for="Qo'ziqorin" class="label">Qo'ziqorin</label>
+            <input id="Qazi" class="checkbox" type="checkbox">
+            <label for="Qazi" class="label">Qazi</label>
+        </div>
+        <div class="choise__wrapper">
+            <p class="parag">
+                Qo'shimchalar
+            </p>
+            <input type="checkbox" class="input__achchiq">
+            <label for="" class="label__achchiq">Achchiq</label>
+            <input type="checkbox" class="input__achchiq">
+            <label for="" class="label__achchiq">Sosiskali</label>
+        </div>
+    </div>
+</div>
+<div class="orders__wrapper">
+    <p class="bread">
+        Non:<span class="bread__span"></span>
+    </p>
+    <p class="size">
+        kattaligi:
+        <span class="size__span">
+
+        </span>
+    </p>
+    <p class="above">
+        Ustida:
+        <span class="above__span">
+
+        </span>
+    </p>
+    <p class="additions">
+        <span class="additions__span">
+
+        </span>
+    </p>
+    <button class="btn__placing__an__order">
+        Buyurtma berish
+    </button>
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
